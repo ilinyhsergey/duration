@@ -2,8 +2,9 @@ import type { DurationConfig } from './model/duration-config.ts';
 import { DurationPrecisionFormat } from './model/duration-precision-format.ts';
 import {
   durationPrecisionFormatOrder,
-  durationPrecisionFormatPostfix, durationPrecisionFormatToDurationKey,
-} from './model/duration-precision-format.constants.ts';
+  durationPrecisionFormatPostfix,
+  durationPrecisionFormatToDurationKey,
+} from './format/duration-precision-format.constants.ts';
 
 export class Duration {
 

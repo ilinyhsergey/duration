@@ -1,5 +1,5 @@
-import { DurationPrecisionFormat } from './duration-precision-format';
-import { type DurationConfig } from './duration-config';
+import { DurationPrecisionFormat } from '../model/duration-precision-format.ts';
+import { type DurationConfig } from '../model/duration-config.ts';
 
 export const durationPrecisionFormatOrder: readonly DurationPrecisionFormat[] = Object.freeze([
   DurationPrecisionFormat.days,
