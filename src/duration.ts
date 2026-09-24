@@ -124,8 +124,8 @@ export class Duration {
   }
 
   public toFormat(
-    precisionFormat = DurationPrecisionFormat.hours,
-    isIncreasePrecisionForZero = false,
+    precisionFormat: DurationPrecisionFormat = DurationPrecisionFormat.hours,
+    isIncreasePrecisionForZero: boolean = false,
   ): string {
     const splitPrecisionIdx = durationPrecisionFormatOrder.indexOf(precisionFormat);
 
