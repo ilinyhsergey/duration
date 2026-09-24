@@ -1,7 +1,7 @@
 {
   "name": "duration",
   "version": "0.0.0",
-  "description": "",
+  "description": "Иммутабельный класс для работы с длительностями и форматирования времени",
   "license": "MIT",
   "type": "module",
   "main": "./dist/duration.cjs",
@@ -16,7 +16,8 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.en.md"
   ],
   "sideEffects": false,
   "scripts": {
