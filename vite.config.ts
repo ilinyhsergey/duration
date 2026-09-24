@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
@@ -15,5 +15,14 @@ export default defineConfig({
       external: [],
     },
     sourcemap: true,
+  },
+  test: {
+    include: ['src/**/*.test.ts'],
+    environment: 'node',
+    setupFiles: ['./vitest.setup.ts'],
+    coverage: {
+      include: ['src/**/*.ts'],
+      exclude: ['src/index.ts', 'src/model/**'],
+    },
   },
 })
