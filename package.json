@@ -1,15 +1,32 @@
 {
   "name": "duration",
-  "private": true,
   "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
   "type": "module",
+  "main": "./dist/duration.cjs",
+  "module": "./dist/duration.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/duration.js",
+      "require": "./dist/duration.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "vite build --watch",
+    "build": "tsc --noEmit && vite build",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "typescript": "~6.0.2",
-    "vite": "^8.3.0"
+    "vite": "^8.3.0",
+    "vite-plugin-dts": "^5.1.1"
   }
 }
