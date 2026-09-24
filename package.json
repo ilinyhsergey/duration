@@ -1,6 +1,6 @@
 {
-  "name": "duration",
-  "version": "0.0.1",
+  "name": "@ilinyhsergey/duration",
+  "version": "0.0.2",
   "description": "Иммутабельный класс для работы с длительностями и форматирования времени",
   "license": "MIT",
   "type": "module",
@@ -26,7 +26,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish --access public"
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
